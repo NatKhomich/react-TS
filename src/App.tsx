@@ -21,18 +21,14 @@ function App() {
     return (
         <div className={'App'}>
 
-            {/*<UncontrolledOnOff />*/}
             <OnOff on={switchOn} onChange={(on) => {
                 setSwitchOn(on)
             }}/>
 
-
-            {/*<UncontrolledAccordion titleValue={'--Menu--'}/>*/}
             <Accordion titleValue={'--User--'}
                        collapsed={accordionCollapsed}
-                       onClick={() => {
-                           setAccordionCollapsed(!accordionCollapsed)
-                       }}/>
+                       onClick={() => {setAccordionCollapsed(!accordionCollapsed)}}
+            />
 
 
             <UncontrolledRating/>
