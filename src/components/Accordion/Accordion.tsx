@@ -6,7 +6,6 @@ type AccordionPropsType = {
     onClick: ()=> void
 }
 
-
 function Accordion(props:AccordionPropsType) {
     return (
         <div>

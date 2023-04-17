@@ -5,11 +5,9 @@ type AccordionPropsType = {
     //collapsed: boolean
 }
 
-
 function UncontrolledAccordion(props:AccordionPropsType) {
 
     let [collapsed, setCollapsed] = useState( false )
-
 
     return (
         <div>

@@ -6,6 +6,11 @@ import UncontrolledAccordion from './components/Accordion/UncontrolledAccordion'
 import {UncontrolledRating} from './components/Rating/UncontrolledRating';
 import Accordion from './components/Accordion/Accordion';
 import {UncontrolledOnOff} from './components/OnOff/UncontrolledOnOff';
+import {
+    GetValueUncontrolledInputByButtonSend,
+    TrackValueUncontrolledInput,
+    UncontrolledInput
+} from './components/Input/UncontrolledInput';
 
 function App() {
 
@@ -18,16 +23,22 @@ function App() {
     return (
         <div className={'App'}>
 
-            <OnOff on={switchOn} onChange={ (on)=> { setSwitchOn(on) } }/>
             {/*<UncontrolledOnOff />*/}
+            <OnOff on={switchOn} onChange={ (on)=> { setSwitchOn(on) } }/>
 
+
+            {/*<UncontrolledAccordion titleValue={'--Menu--'}/>*/}
             <Accordion titleValue={'--User--'}
                        collapsed={accordionCollapsed}
                        onClick={ ()=> {setAccordionCollapsed(!accordionCollapsed)}}/>
-            {/*<UncontrolledAccordion titleValue={'--Menu--'}/>*/}
+
 
             <UncontrolledRating/>
             <Rating value={ratingValue} onClick={setRatingValue}/>
+
+           {/* <UncontrolledInput />*/}
+            <TrackValueUncontrolledInput />
+            <GetValueUncontrolledInputByButtonSend />
         </div>
     );
 }
