@@ -39,6 +39,7 @@ export const GetValueUncontrolledInputByButtonSend = () => {
         <div>
             <input ref={inputRef}/>
             <button onClick={ onClickButtonValueHandler }> Send </button>
+            uncontrolled input
            - actual value: {value}
         </div>
     )
