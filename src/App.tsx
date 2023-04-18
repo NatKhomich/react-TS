@@ -3,7 +3,7 @@ import './App.css';
 import {Rating, RatingValueType} from './components/Rating/Rating';
 import OnOff from './components/OnOff/OnOff';
 import {UncontrolledRating} from './components/Rating/UncontrolledRating';
-import Accordion from './components/Accordion/Accordion';
+import Accordion, {ItemsType} from './components/Accordion/Accordion';
 import {
     GetValueUncontrolledInputByButtonSend,
     TrackValueUncontrolledInput,
@@ -18,6 +18,13 @@ function App() {
 
     let [switchOn, setSwitchOn] = useState(false)
 
+    const items: ItemsType[] = [
+        {title: 'Natalia', value: 1},
+        {title: 'Alex', value: 2},
+        {title: 'Bonya', value: 3},
+    ]
+
+
     return (
         <div className={'App'}>
 
@@ -28,6 +35,8 @@ function App() {
             <Accordion titleValue={'--User--'}
                        collapsed={accordionCollapsed}
                        onClick={() => {setAccordionCollapsed(!accordionCollapsed)}}
+                       onClickItem={ (value)=> console.log(value) }
+                       items={items}
             />
 
 
