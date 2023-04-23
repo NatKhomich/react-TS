@@ -2,10 +2,8 @@ import React, {useState} from 'react';
 import './App.css';
 import {Rating, RatingValueType} from './components/Rating/Rating';
 import OnOff from './components/OnOff/OnOff';
-import {UncontrolledRating} from './components/Rating/UncontrolledRating';
 import Accordion, {ItemsType} from './components/Accordion/Accordion';
 import {
-    GetValueUncontrolledInputByButtonSend,
     TrackValueUncontrolledInput,
 } from './components/Input/UncontrolledInput';
 import {ControlledCheckbox, ControlledInput, ControlledSelect} from './components/Input/ControlledInput';
@@ -39,13 +37,10 @@ function App() {
                        items={items}
             />
 
-
-            <UncontrolledRating/>
             <Rating value={ratingValue} onClick={setRatingValue}/>
 
-            {/* <UncontrolledInput />*/}
             <TrackValueUncontrolledInput/>
-            <GetValueUncontrolledInputByButtonSend/>
+
             <ControlledInput/>
             <ControlledCheckbox />
             <ControlledSelect />
