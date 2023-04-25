@@ -3,9 +3,6 @@ import './App.css';
 import {Rating, RatingValueType} from './components/Rating/Rating';
 import OnOff from './components/OnOff/OnOff';
 import Accordion, {ItemsType} from './components/Accordion/Accordion';
-import {
-    TrackValueUncontrolledInput,
-} from './components/Input/UncontrolledInput';
 import {ControlledCheckbox, ControlledInput, ControlledSelect} from './components/Input/ControlledInput';
 
 function App() {
@@ -38,8 +35,6 @@ function App() {
             />
 
             <Rating value={ratingValue} onClick={setRatingValue}/>
-
-            <TrackValueUncontrolledInput/>
 
             <ControlledInput/>
             <ControlledCheckbox />
