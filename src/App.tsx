@@ -4,6 +4,7 @@ import {Rating, RatingValueType} from './components/Rating/Rating';
 import OnOff from './components/OnOff/OnOff';
 import Accordion, {ItemsType} from './components/Accordion/Accordion';
 import {ControlledCheckbox, ControlledInput, ControlledSelect} from './components/Input/ControlledInput';
+import {UncontrolledOnOff} from './components/OnOff/UncontrolledOnOff';
 
 function App() {
 
@@ -26,6 +27,7 @@ function App() {
             <OnOff on={switchOn} onChange={(on) => {
                 setSwitchOn(on)
             }}/>
+            <UncontrolledOnOff />
 
             <Accordion titleValue={'--User--'}
                        collapsed={accordionCollapsed}
