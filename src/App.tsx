@@ -4,7 +4,7 @@ import {Rating, RatingValueType} from './components/Rating/Rating';
 import OnOff from './components/OnOff/OnOff';
 import Accordion, {ItemsType} from './components/Accordion/Accordion';
 import {ControlledCheckbox, ControlledInput, ControlledSelect} from './components/Input/ControlledInput';
-import {UncontrolledOnOff} from './components/OnOff/UncontrolledOnOff';
+import Select from './components/Select/Select';
 
 function App() {
 
@@ -20,6 +20,7 @@ function App() {
         {title: 'Bonya', value: 3},
     ]
 
+    //let [selectValue, setSelectValue] = useState<undefined | string>(undefined)
 
     return (
         <div className={'App'}>
@@ -27,7 +28,6 @@ function App() {
             <OnOff on={switchOn} onChange={(on) => {
                 setSwitchOn(on)
             }}/>
-            <UncontrolledOnOff />
 
             <Accordion titleValue={'--User--'}
                        collapsed={accordionCollapsed}
@@ -41,6 +41,9 @@ function App() {
             <ControlledInput/>
             <ControlledCheckbox />
             <ControlledSelect />
+
+
+            <Select items={items} selectValue={2} onChange={()=>console.log(items)}/>
         </div>
     );
 }
