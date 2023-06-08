@@ -1,18 +1,26 @@
 .select {
-    border: 1px solid black;
-    max-width: 100px;
-    position: relative;
+margin-top: 20px;
 
+}
+
+.select .main {
+    border: 1px solid black;
+    display: inline-block;
+    min-width: 80px;
+    min-height: 30px;
+    padding-top: 5px;
+    border-radius: 3px;
 }
 
 .items {
-    display: none;
     border: 1px solid black;
     position: absolute;
-    padding: 5px;
-    min-width: 89px;
+    margin-left: 110px;
+    min-width: 80px;
+    border-radius: 3px;
 }
 
-.select.active .items{
-    display: block;
+.item.selected {
+    background-color: cornflowerblue;
+    color: white;
 }

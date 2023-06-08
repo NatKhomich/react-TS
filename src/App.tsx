@@ -20,7 +20,7 @@ function App() {
         {title: 'Bonya', value: 3},
     ]
 
-    //let [selectValue, setSelectValue] = useState<undefined | string>(undefined)
+    let [selectValue, setSelectValue] = useState<undefined | string>(undefined)
 
     return (
         <div className={'App'}>
@@ -43,7 +43,9 @@ function App() {
             <ControlledSelect />
 
 
-            <Select items={items} selectValue={2} onChange={()=>console.log(items)}/>
+            <Select items={items}
+                    selectValue={selectValue}
+                    onChange={(value)=>setSelectValue(value)}/>
         </div>
     );
 }
