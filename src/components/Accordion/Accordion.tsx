@@ -14,7 +14,6 @@ type AccordionPropsType = {
 }
 
 
-
 function Accordion(props: AccordionPropsType) {
     return (
         <div>
@@ -49,7 +48,7 @@ function AccordionBody(props: AccordionBodyType) {
         <ul>
             {props.items.map(el => {
                 return (
-                    <li key={el.value} onClick={()=> props.onClick(el.value)}>
+                    <li key={el.value} onClick={() => props.onClick(el.value)}>
                         {el.value} {el.title}
                     </li>
                 )

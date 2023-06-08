@@ -20,7 +20,7 @@ function App() {
         {title: 'Bonya', value: 3},
     ]
 
-    let [selectValue, setSelectValue] = useState<undefined | string>(undefined)
+    let [selectValue, setSelectValue] = useState('')
 
     return (
         <div className={'App'}>
@@ -31,21 +31,21 @@ function App() {
 
             <Accordion titleValue={'--User--'}
                        collapsed={accordionCollapsed}
-                       onClick={() => {setAccordionCollapsed(!accordionCollapsed)}}
-                       onClickItem={ (value)=> console.log(value) }
+                       onClick={() => setAccordionCollapsed(!accordionCollapsed)}
+                       onClickItem={(value) => console.log(value)}
                        items={items}
             />
 
             <Rating value={ratingValue} onClick={setRatingValue}/>
 
             <ControlledInput/>
-            <ControlledCheckbox />
-            <ControlledSelect />
+            <ControlledCheckbox/>
+            <ControlledSelect/>
 
 
             <Select items={items}
                     selectValue={selectValue}
-                    onChange={(value)=>setSelectValue(value)}/>
+                    setSelectValue={(value) => setSelectValue(value)}/>
         </div>
     );
 }
