@@ -6,6 +6,7 @@ import Accordion, {ItemsType} from './components/Accordion/Accordion';
 import {ControlledCheckbox, ControlledInput, ControlledSelect} from './components/Input/ControlledInput';
 import Select from './components/Select/Select';
 import {UncontrolledAccordion} from './components/Accordion/UncontrolledAccordion';
+import Example from './components/ReactMemo';
 
 function App() {
 
@@ -49,6 +50,9 @@ function App() {
             <Select items={items}
                     selectValue={selectValue}
                     setSelectValue={(value) => setSelectValue(value)}/>
+
+
+            <Example />
         </div>
     );
 }
