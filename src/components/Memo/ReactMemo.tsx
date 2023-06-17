@@ -4,8 +4,8 @@ const Counter = (props: {count: number}) => {
     return <div> {props.count} </div>
 }
 
-const UsersSecret = (props: {users: Array<string>}) => {
-    console.log('Users')
+const NewUsersSecret = (props: {users: Array<string>}) => {
+    console.log('NewUsersSecret')
     return (
         <div>
             {props.users.map((el, index) => <div key={index}>{el}</div>)}
@@ -13,8 +13,7 @@ const UsersSecret = (props: {users: Array<string>}) => {
     )
 }
 
-const Users = React.memo(UsersSecret)
-
+const Users = React.memo(NewUsersSecret)
 
 const Example = () => {
 
