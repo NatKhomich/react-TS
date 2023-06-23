@@ -6,8 +6,9 @@ import Accordion, {ItemsType} from './components/Accordion/Accordion';
 import {ControlledCheckbox, ControlledInput, ControlledSelect} from './components/Input/ControlledInput';
 import Select from './components/Select/Select';
 import {UncontrolledAccordion} from './components/Accordion/UncontrolledAccordion';
-import {DifficultCountingExample, ExampleUseMemo, HelpsReactMemo} from './components/Memo/UseMemo';
+import {ExampleUseMemo, HelpsReactMemo} from './components/Memo/UseMemo';
 import Example from './components/Memo/ReactMemo';
+import {UseCallBack} from './components/Memo/UseCallBack';
 
 function App() {
 
@@ -56,9 +57,10 @@ function App() {
             <Example />
 
             <ExampleUseMemo />
-            <DifficultCountingExample />
 
             <HelpsReactMemo  />
+
+             <UseCallBack />
         </div>
     );
 }

@@ -40,16 +40,7 @@ export const ExampleUseMemo = () => {
     )
 }
 
-
-export const DifficultCountingExample = () => {
-    return (
-        <div>
-
-        </div>
-    )
-}
-
-const UsersSecret = (props: {users: Array<string>}) => {
+export const UsersSecret = (props: {users: Array<string>}) => {
     console.log('Users')
     return (
         <div>
