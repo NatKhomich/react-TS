@@ -9,6 +9,7 @@ import {UncontrolledAccordion} from './components/Accordion/UncontrolledAccordio
 import {ExampleUseMemo, HelpsReactMemo} from './components/Memo/UseMemo';
 import Example from './components/Memo/ReactMemo';
 import {UseCallBack} from './components/Memo/UseCallBack';
+import {UseState} from './components/UseState/UseState';
 
 function App() {
 
@@ -61,6 +62,8 @@ function App() {
             <HelpsReactMemo  />
 
              <UseCallBack />
+
+            <UseState />
         </div>
     );
 }
