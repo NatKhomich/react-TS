@@ -10,7 +10,7 @@ import {ExampleUseMemo, HelpsReactMemo} from './components/Memo/UseMemo';
 import Example from './components/Memo/ReactMemo';
 import {UseCallBack} from './components/Memo/UseCallBack';
 import {UseState} from './components/UseState/UseState';
-import {UseEffect} from './components/UseEffect/UseEffect';
+import {TimeCounter, UseEffect} from './components/UseEffect/UseEffect';
 
 function App() {
 
@@ -67,6 +67,8 @@ function App() {
             <UseState />
 
             <UseEffect />
+
+            <TimeCounter />
         </div>
     );
 }
