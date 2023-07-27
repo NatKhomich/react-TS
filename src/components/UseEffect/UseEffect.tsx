@@ -28,7 +28,7 @@ export const UseEffect = () => {
     );
 };
 
-export const TimeCounter = () => {
+export const MyClock = () => {
 
     const [currentTime, setCurrentTime] = useState(new Date())
 
@@ -36,9 +36,7 @@ export const TimeCounter = () => {
         const interval = setInterval(() => {
             setCurrentTime(new Date())
         }, 1000)
-
-        return () => clearInterval(interval)
-
+        return () => clearInterval(interval) //зачистка
     }, [])
 
     return (
@@ -48,3 +46,4 @@ export const TimeCounter = () => {
         </div>
     )
 }
+
