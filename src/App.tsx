@@ -10,7 +10,8 @@ import {ExampleUseMemo, HelpsReactMemo} from './components/Memo/UseMemo';
 import Example from './components/Memo/ReactMemo';
 import {UseCallBack} from './components/Memo/UseCallBack';
 import {UseState} from './components/UseState/UseState';
-import {Clock, MyClock, UseEffect} from './components/UseEffect/UseEffect';
+import {UseEffect} from './components/UseEffect/UseEffect';
+import {AnalogClock, DigitalClock} from './components/Clock/Clock';
 
 function App() {
 
@@ -56,19 +57,21 @@ function App() {
                     setSelectValue={(value) => setSelectValue(value)}/>
 
 
-            <Example />
+            <Example/>
 
-            <ExampleUseMemo />
+            <ExampleUseMemo/>
 
-            <HelpsReactMemo  />
+            <HelpsReactMemo/>
 
-             <UseCallBack />
+            <UseCallBack/>
 
-            <UseState />
+            <UseState/>
 
-            <UseEffect />
+            <UseEffect/>
 
-            <MyClock />
+            <AnalogClock/>
+
+            <DigitalClock />
         </div>
     );
 }
