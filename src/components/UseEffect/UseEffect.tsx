@@ -28,5 +28,27 @@ export const UseEffect = () => {
     );
 };
 
+export const KeysTrackerExample = () => {
+    const [text, setText] = useState('')
 
+    useEffect(() => {
+
+        const handler = (e: KeyboardEvent) => {
+                console.log(e.key)
+                setText((text) => text + e.key)
+        }
+
+        window.addEventListener('keypress', handler)
+
+        return () => {
+            window.removeEventListener('keypress', handler)
+        }
+    }, [text])
+
+    return (
+        <div style={{fontSize: '20px', fontWeight: 'bold', color: 'red'}}>
+            Types text: {text}
+        </div>
+    )
+}
 

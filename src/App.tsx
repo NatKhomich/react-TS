@@ -10,7 +10,7 @@ import {ExampleUseMemo, HelpsReactMemo} from './components/Memo/UseMemo';
 import Example from './components/Memo/ReactMemo';
 import {UseCallBack} from './components/Memo/UseCallBack';
 import {UseState} from './components/UseState/UseState';
-import {UseEffect} from './components/UseEffect/UseEffect';
+import {KeysTrackerExample, UseEffect} from './components/UseEffect/UseEffect';
 import {AnalogClock, DigitalClock} from './components/Clock/Clock';
 
 function App() {
@@ -68,9 +68,9 @@ function App() {
             <UseState/>
 
             <UseEffect/>
+            <KeysTrackerExample />
 
             <AnalogClock/>
-
             <DigitalClock />
         </div>
     );
