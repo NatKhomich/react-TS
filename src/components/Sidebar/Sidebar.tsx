@@ -1,5 +1,6 @@
-import {Box, Drawer, List, ListItem, ListItemButton, ListItemIcon, ListItemText} from "@mui/material";
+import {Drawer, List, ListItem, ListItemButton, ListItemText} from "@mui/material";
 import React from "react";
+import {NavLink} from "react-router-dom";
 
 type SidebarProps = {
     isOpen: boolean;
@@ -8,21 +9,47 @@ type SidebarProps = {
 
 export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
     return (
-        <Drawer anchor="left" open={isOpen} onClose={onClose}>
-            <Box sx={{ width: 250 }} role="presentation" onClick={onClose} onKeyDown={onClose}>
-                <List>
-                    {['Inbox', 'Starred', 'Send email', 'Drafts'].map((text, index) => (
-                        <ListItem key={text} disablePadding>
-                            <ListItemButton>
-                                <ListItemIcon>
-                                    {/*{index % 2 === 0 ? <InboxIcon /> : <MailIcon />}*/}
-                                </ListItemIcon>
-                                <ListItemText primary={text} />
-                            </ListItemButton>
-                        </ListItem>
-                    ))}
+        <div>
+            <Drawer anchor="left" open={isOpen} onClose={onClose} >
+                <List style={{width: '300px'}}>
+                    <ListItem disablePadding>
+                        <ListItemButton component={NavLink} to="/">
+
+                            <ListItemText primary="Home" />
+                        </ListItemButton>
+                    </ListItem>
+
+                    <ListItem disablePadding>
+                        <ListItemButton component={NavLink} to="/clock">
+                            <ListItemText primary="Clock" />
+                        </ListItemButton>
+                    </ListItem>
+
+                    <ListItem disablePadding>
+                        <ListItemButton component={NavLink} to="/switch">
+                            <ListItemText primary="Switch" />
+                        </ListItemButton>
+                    </ListItem>
+
+                    <ListItem disablePadding>
+                        <ListItemButton component={NavLink} to="/rating">
+                            <ListItemText primary="Rating" />
+                        </ListItemButton>
+                    </ListItem>
+
+                    <ListItem disablePadding>
+                        <ListItemButton component={NavLink} to="/select">
+                            <ListItemText primary="Select" />
+                        </ListItemButton>
+                    </ListItem>
+
                 </List>
-            </Box>
-        </Drawer>
+            </Drawer>
+        </div>
     );
+};
+
+
+export const HomePage: React.FC = () => {
+    return <div>Home Page</div>;
 };

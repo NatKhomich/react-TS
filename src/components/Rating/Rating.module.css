@@ -1,0 +1,29 @@
+
+.root {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.rating {
+    margin-bottom: 40px;
+}
+
+.img {
+    width: 40px;
+    margin-right: 10px;
+}
+
+.img:hover {
+    width: 40px;
+    box-shadow: 10px 5px 5px gold;
+}
+
+.imgActive {
+    box-shadow: 10px 5px 5px gold;
+    width: 40px;
+    margin-right: 10px;
+}
