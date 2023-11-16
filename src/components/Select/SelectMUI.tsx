@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import InputLabel from '@mui/material/InputLabel';
 import MenuItem from '@mui/material/MenuItem';
 import FormControl from '@mui/material/FormControl';
-import Select, { SelectChangeEvent } from '@mui/material/Select';
+import Select, {SelectChangeEvent} from '@mui/material/Select';
 
 export function SelectMUI() {
     const [city, setCity] = React.useState('');
@@ -13,7 +13,7 @@ export function SelectMUI() {
     };
 
     return (
-        <Box sx={{ minWidth: 80 }}>
+        <Box sx={{maxWidth: 180, marginLeft: 'auto', marginRight: 'auto'}}>
             <FormControl fullWidth>
                 <InputLabel>City</InputLabel>
                 <Select

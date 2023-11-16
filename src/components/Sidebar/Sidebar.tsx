@@ -43,6 +43,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                         </ListItemButton>
                     </ListItem>
 
+                    <ListItem disablePadding>
+                        <ListItemButton component={NavLink} to="/pagination">
+                            <ListItemText primary="Pagination" />
+                        </ListItemButton>
+                    </ListItem>
+
                 </List>
             </Drawer>
         </div>
@@ -51,5 +57,5 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 
 
 export const HomePage: React.FC = () => {
-    return <div>Home Page</div>;
+    return <h1 style={{color: 'gray'}}> My testing component </h1>;
 };

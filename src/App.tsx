@@ -7,6 +7,7 @@ import {Route, Routes} from "react-router-dom";
 import Rating from "components/Rating/Rating";
 import {Switch} from "components/Switch/Switch";
 import Select from "components/Select/Select";
+import {PaginationContainer} from "components/Pagination/PaginationContainer";
 
 
 function App() {
@@ -26,11 +27,11 @@ function App() {
                 <Routes>
                     <Route path="/" element={<HomePage/>}/>
                     <Route path="/clock" element={<Clock/>}/>
-                    <Route path="/switch" element={<Switch />}/>
-                    <Route path="/rating" element={<Rating />}/>
-                    <Route path="/select" element={<Select />}/>
+                    <Route path="/switch" element={<Switch/>}/>
+                    <Route path="/rating" element={<Rating/>}/>
+                    <Route path="/select" element={<Select/>}/>
+                    <Route path="/pagination" element={<PaginationContainer/>}/>
                 </Routes>
-
             </div>
         </div>
     );

@@ -1,0 +1,85 @@
+.pagination {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+.pageNumber {
+    padding: 0 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #666666;
+}
+
+.selectedPage {
+    padding: 0 15px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #666666;
+    background-color: #d8dfe8;
+    font-weight: bold;
+}
+
+.selectedPage:hover {
+    opacity: 0.9;
+}
+
+.pageNumber:hover {
+    opacity: 0.9;
+    background-color: #d8dfe8;
+}
+
+.button {
+    padding: 0 15px;
+    background-color: #e5e7eb;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    color: #666666;
+    height: 36px;
+    font-weight: 600;
+}
+
+.button:hover {
+    background-color: #8a8c93;
+    color: #FFFFFF;
+}
+
+@media (max-width: 690px) {
+    .pagination {
+        gap: 5px;
+    }
+
+    .button {
+        padding: 2px;
+    }
+
+    .pageNumber {
+        padding: 10px;
+    }
+    .selectedPage {
+        padding: 10px;
+    }
+}
+
+.countries {
+    margin-top: 20px;
+    border: 1px solid #5e5c5c;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.imgCounty {
+    /*width: '30px', marginLeft: '10px'*/
+   width: 30px;
+    margin-left: 10px;
+}
