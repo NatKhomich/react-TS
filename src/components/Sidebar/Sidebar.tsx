@@ -49,6 +49,12 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
                         </ListItemButton>
                     </ListItem>
 
+                    <ListItem disablePadding>
+                        <ListItemButton component={NavLink} to="/file">
+                            <ListItemText primary="InputFile" />
+                        </ListItemButton>
+                    </ListItem>
+
                 </List>
             </Drawer>
         </div>

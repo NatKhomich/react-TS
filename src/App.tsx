@@ -8,6 +8,7 @@ import Rating from "components/Rating/Rating";
 import {Switch} from "components/Switch/Switch";
 import Select from "components/Select/Select";
 import {PaginationContainer} from "components/Pagination/PaginationContainer";
+import {InputTypeFile} from "components/InputFile/InputTypeFile";
 
 
 function App() {
@@ -31,6 +32,7 @@ function App() {
                     <Route path="/rating" element={<Rating/>}/>
                     <Route path="/select" element={<Select/>}/>
                     <Route path="/pagination" element={<PaginationContainer/>}/>
+                    <Route path="/file" element={<InputTypeFile/>}/>
                 </Routes>
             </div>
         </div>

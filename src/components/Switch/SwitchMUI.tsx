@@ -13,7 +13,7 @@ export const SwitchMUI = (props: PropsType) =>  {
 
     return (
         <div style={{marginTop: '40px'}}>
-            <Switch {...label} defaultChecked checked={on}
+            <Switch {...label} checked={on}
                     onClick={ () => onChange(!on) } />
         </div>
     );
