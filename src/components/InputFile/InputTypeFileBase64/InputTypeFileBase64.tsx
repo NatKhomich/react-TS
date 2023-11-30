@@ -3,6 +3,16 @@ import {IconButton} from '@mui/material';
 import CloudUploadIcon from '@mui/icons-material/CloudUpload';
 import defaultAva from './25231.png'
 
+//utils
+const convertFileToBase64 = (file: File, callBack: (value: string) => void) => {
+    const reader = new FileReader();
+    reader.onloadend = () => {
+        const file64 = reader.result as string
+        callBack(file64)
+    }
+    reader.readAsDataURL(file)
+}
+
 export const InputTypeFileBase64 = () => {
 
     const [ava, setAva] = useState(defaultAva)
@@ -20,15 +30,6 @@ export const InputTypeFileBase64 = () => {
                 console.error('Error: ', 'Файл слишком большого размера')
             }
         }
-    }
-
-    const convertFileToBase64 = (file: File, callBack: (value: string) => void) => {
-        const reader = new FileReader();
-        reader.onloadend = () => {
-            const file64 = reader.result as string
-            callBack(file64)
-        }
-        reader.readAsDataURL(file)
     }
 
     const errorHandler = () => {

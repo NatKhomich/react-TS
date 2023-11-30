@@ -1,7 +1,7 @@
 import React, {useState} from 'react';
 import './App.css';
 import {Header} from 'components/Header/Header';
-import {HomePage, Sidebar} from "components/Sidebar/Sidebar";
+import {Sidebar} from "components/Sidebar/Sidebar";
 import {Clock} from "components/Clock/Clock";
 import {Route, Routes} from "react-router-dom";
 import Rating from "components/Rating/Rating";
@@ -9,6 +9,7 @@ import {Switch} from "components/Switch/Switch";
 import Select from "components/Select/Select";
 import {PaginationContainer} from "components/Pagination/PaginationContainer";
 import {InputTypeFile} from "components/InputFile/InputTypeFile";
+import {HomePage} from "components/HomePage/HomePage";
 
 
 function App() {

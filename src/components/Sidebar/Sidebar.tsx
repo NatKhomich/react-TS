@@ -62,6 +62,3 @@ export const Sidebar: React.FC<SidebarProps> = ({ isOpen, onClose }) => {
 };
 
 
-export const HomePage: React.FC = () => {
-    return <h1 style={{color: 'gray'}}> My testing component </h1>;
-};
