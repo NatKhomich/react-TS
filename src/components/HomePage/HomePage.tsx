@@ -71,8 +71,7 @@ const Button = styled.button<ButtonProps>`
   &:hover {
     background-color: rgba(63, 47, 79, 0.34);
   }
-
-
+  
   ${props => props.primary && css<ButtonProps>`
     color: #FFFFFF;
     background-color: #4E71FE;
